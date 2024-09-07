@@ -1,0 +1,90 @@
+* {
+    font-family: "SUSE", sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center; /* Alinha o contêiner ao centro horizontalmente */
+    align-items: center; /* Alinha o contêiner ao centro verticalmente  */
+    height: 100vh; /* Ocupa 100% da altura da tela */
+    margin: 0; /* Remove qualquer margem padrão */
+    background-color: rgb(185, 185, 185);
+} 
+.conteiner {
+    background-color: rgb(246, 246, 246);
+    width: 400px;
+    height: 600px;
+    border-radius: 2%;
+}
+.logintitle {
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+}
+.campologin {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column; /* Alinha itens em uma coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    gap: 10px; /* Espaçamento entre os itens */
+    padding: 20px;
+
+     & .username {
+        margin-right: 120px;
+     }
+
+     & .password {
+        margin-right: 125px;
+     }
+
+     & .forgotpassword {
+        margin-top: 5px;
+        margin-left: 100px;
+     }
+
+     & .borderone {
+        border: none; /* Remove todas as bordas padrão */
+        border-bottom: 1px solid black; /* Adiciona apenas a borda inferior, com 2px de largura, sólida e preta */
+        outline: none; /* Remove o contorno ao focar (opcional) */
+     }
+
+     & .bordertwo {
+        border: none; /* Remove todas as bordas padrão */
+        border-bottom: 1px solid black; /* Adiciona apenas a borda inferior, com 2px de largura, sólida e preta */
+        outline: none; /* Remove o contorno ao focar (opcional) */
+     }
+}
+
+.button {
+    display: flex;
+    justify-content: center; /* Centraliza o botão */
+    align-items: center; /* Opcional */
+    margin-top: 10px; /* Espaçamento entre o botão e os campos acima */
+    
+    & .buttonor {
+        border: none;
+        border-radius: 50px;
+        height: 30px;
+        width: 200px;
+        background-color: black;
+        color: rgb(255, 255, 255);
+    }
+}
+
+.subscribe {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    gap: 8px; /* Espaçamento entre as imagens */
+    margin-top: 10px; 
+
+    & .fbimg {
+        border-radius: 50%;
+    }
+}
